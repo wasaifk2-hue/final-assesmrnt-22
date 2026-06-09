@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- This is an HTML5 document -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport makes the page look good on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quick Reference Guide</title>
+    <!-- link to my external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER: site title and main navigation -->
+    <header>
+        <h1>HTML &amp; CSS Quick Reference</h1>
+        <p>A beginner's guide to common tags and properties</p>
+
+        <!-- navigation links -->
+        <nav>
+            <a href="#html-tags">HTML Tags</a>
+            <a href="#css-props">CSS Properties</a>
+            <a href="#examples">Examples</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- MAIN: split into three columns -->
+    <main>
+
+        <!-- ===== COLUMN 1: HTML Tags ===== -->
+        <section id="html-tags">
+            <h2>HTML Tags</h2>
+            <p>Here are some of the most common HTML tags used in web pages.</p>
+
+            <!-- 1. h1 tag -->
+            <article class="tag-card">
+                <h3>&lt;h1&gt; to &lt;h6&gt;</h3>
+                <p>Heading tags. h1 is the biggest, h6 is the smallest.</p>
+                <pre><code>&lt;h1&gt;Main Title&lt;/h1&gt;
+&lt;h2&gt;Sub Title&lt;/h2&gt;</code></pre>
+            </article>
+
+            <!-- 2. p tag -->
+            <article class="tag-card">
+                <h3>&lt;p&gt;</h3>
+                <p>Paragraph tag. Used for blocks of text.</p>
+                <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+            </article>
+
+            <!-- 3. a tag -->
+            <article class="tag-card">
+                <h3>&lt;a&gt;</h3>
+                <p>Anchor tag. Creates a clickable link to another page or section.</p>
+                <pre><code>&lt;a href="https://google.com"&gt;
+    Visit Google
+&lt;/a&gt;</code></pre>
+            </article>
+
+            <!-- 4. img tag -->
+            <article class="tag-card">
+                <h3>&lt;img&gt;</h3>
+                <p>Image tag. Displays an image on the page. It is self-closing.</p>
+                <pre><code>&lt;img src="photo.jpg"
+     alt="A photo"&gt;</code></pre>
+            </article>
+
+            <!-- 5. ul and li tags -->
+            <article class="tag-card">
+                <h3>&lt;ul&gt; and &lt;li&gt;</h3>
+                <p>Unordered list and list item. Creates a bullet point list.</p>
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item one&lt;/li&gt;
+    &lt;li&gt;Item two&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </article>
+
+        </section>
+
+        <!-- ===== COLUMN 2: More HTML Tags ===== -->
+        <section id="examples">
+            <h2>More HTML Tags</h2>
+            <p>These tags help structure and organise the content of a page.</p>
+
+            <!-- 6. div tag -->
+            <article class="tag-card">
+                <h3>&lt;div&gt;</h3>
+                <p>A generic container. Used to group elements together for styling.</p>
+                <pre><code>&lt;div class="box"&gt;
+    &lt;p&gt;Content here&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            </article>
+
+            <!-- 7. form and input -->
+            <article class="tag-card">
+                <h3>&lt;form&gt; and &lt;input&gt;</h3>
+                <p>Used to collect information from the user.</p>
+                <pre><code>&lt;form&gt;
+    &lt;input type="text"
+           placeholder="Name"&gt;
+    &lt;button&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            </article>
+
+            <!-- 8. table -->
+            <article class="tag-card">
+                <h3>&lt;table&gt;</h3>
+                <p>Creates a table with rows and columns.</p>
+                <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Ali&lt;/td&gt;
+        &lt;td&gt;20&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            </article>
+
+            <!-- 9. header, main, footer -->
+            <article class="tag-card">
+                <h3>&lt;header&gt; &lt;main&gt; &lt;footer&gt;</h3>
+                <p>Semantic tags. They describe the purpose of each section of the page.</p>
+                <pre><code>&lt;header&gt;Top area&lt;/header&gt;
+&lt;main&gt;Page content&lt;/main&gt;
+&lt;footer&gt;Bottom area&lt;/footer&gt;</code></pre>
+            </article>
+
+            <!-- 10. section and article -->
+            <article class="tag-card">
+                <h3>&lt;section&gt; and &lt;article&gt;</h3>
+                <p>section groups related content. article is for self-contained content.</p>
+                <pre><code>&lt;section&gt;
+    &lt;article&gt;
+        &lt;h2&gt;Post title&lt;/h2&gt;
+        &lt;p&gt;Post content&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;</code></pre>
+            </article>
+
+        </section>
+
+        <!-- ===== COLUMN 3: CSS Properties ===== -->
+        <section id="css-props">
+            <h2>CSS Properties</h2>
+            <p>These are some of the most useful CSS properties for styling pages.</p>
+
+            <!-- CSS property cards -->
+            <article class="css-card">
+                <h3>color</h3>
+                <p>Changes the text colour.</p>
+                <pre><code>p {
+    color: blue;
+}</code></pre>
+            </article>
+
+            <article class="css-card">
+                <h3>background-color</h3>
+                <p>Sets the background colour of an element.</p>
+                <pre><code>div {
+    background-color: #f5f5f5;
+}</code></pre>
+            </article>
+
+            <article class="css-card">
+                <h3>font-size</h3>
+                <p>Controls the size of text.</p>
+                <pre><code>h1 {
+    font-size: 32px;
+}</code></pre>
+            </article>
+
+            <article class="css-card">
+                <h3>margin and padding</h3>
+                <p>margin is space outside the element. padding is space inside it.</p>
+                <pre><code>p {
+    margin: 10px;
+    padding: 5px;
+}</code></pre>
+            </article>
+
+            <article class="css-card">
+                <h3>border</h3>
+                <p>Adds a border around an element.</p>
+                <pre><code>div {
+    border: 2px solid black;
+}</code></pre>
+            </article>
+
+            <article class="css-card">
+                <h3>display: flex</h3>
+                <p>Makes elements sit side by side in a row.</p>
+                <pre><code>.container {
+    display: flex;
+    gap: 10px;
+}</code></pre>
+            </article>
+
+            <article class="css-card">
+                <h3>width and height</h3>
+                <p>Sets the size of an element.</p>
+                <pre><code>img {
+    width: 100%;
+    height: 200px;
+}</code></pre>
+            </article>
+
+            <article class="css-card">
+                <h3>border-radius</h3>
+                <p>Rounds the corners of an element.</p>
+                <pre><code>button {
+    border-radius: 5px;
+}</code></pre>
+            </article>
+
+            <!-- buttons -->
+            <div class="btn-group">
+                <button class="btn-main" type="button">Download as PDF</button>
+                <button class="btn-outline" type="button">Print Page</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER: contact and links -->
+    <footer id="contact">
+        <div class="footer-inner">
+
+            <div class="footer-col">
+                <h4>About This Guide</h4>
+                <p>A quick reference for HTML and CSS basics. Made for beginners.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Sections</h4>
+                <a href="#html-tags">HTML Tags</a>
+                <a href="#css-props">CSS Properties</a>
+                <a href="#examples">Examples</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Useful Links</h4>
+                <a href="#">MDN Web Docs</a>
+                <a href="#">W3Schools</a>
+                <a href="#">CSS-Tricks</a>
+            </div>
+
+        </div>
+        <p class="copyright">&copy; 2024 Web Development Module. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
